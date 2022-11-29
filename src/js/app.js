@@ -12,6 +12,7 @@ let add_article = () => {
   articleTemplate.innerHTML =
     " sample text  sample text  sample text  sample text";
   document.body.appendChild(articleTemplate);
+<<<<<<< Updated upstream
 };
 
 document.body.addEventListener("click", (event) => {
@@ -20,4 +21,16 @@ document.body.addEventListener("click", (event) => {
     add_article();
     flag--;
   }
+=======
+
+}
+
+document.body.addEventListener('click', () => {
+  let flag=5
+    while(flag!=0) {
+      add_article()
+      flag--
+    }
+
+>>>>>>> Stashed changes
 });

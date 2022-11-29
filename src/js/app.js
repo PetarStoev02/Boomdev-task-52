@@ -3,8 +3,23 @@ import "../scss/app.scss";
 window.addEventListener("DOMContentLoaded", () => {
   // This block will be executed once the page is loaded and ready
 
+  let add_article = () => {
+    const articleTemplate = document.createElement('article');
+    articleTemplate.classList. add("message")
+  articleTemplate.innerHTML = " sample text  sample text  sample text  sample text";
+  document.body.appendChild(articleTemplate);
+
+}
+
   const button = document.querySelector(".button");
   button.addEventListener("click", () => {
-    alert("💣");
+    let flag=5
+  
+    while(flag!=0) {
+      add_article()
+      flag--
+    }
+
+    
   });
 });
